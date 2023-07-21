@@ -56,6 +56,8 @@ Visualization Manager:
           Value: true
         left_wheel:
           Value: true
+        odom:
+          Value: true
         right_wheel:
           Value: true
       Marker Scale: 1
@@ -64,14 +66,15 @@ Visualization Manager:
       Show Axes: true
       Show Names: false
       Tree:
-        base_link:
-          chassis:
-            caster_wheel:
+        odom:
+          base_link:
+            chassis:
+              caster_wheel:
+                {}
+            left_wheel:
               {}
-          left_wheel:
-            {}
-          right_wheel:
-            {}
+            right_wheel:
+              {}
       Update Interval: 0
       Value: true
     - Alpha: 1
@@ -124,7 +127,7 @@ Visualization Manager:
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
-    Fixed Frame: base_link
+    Fixed Frame: odom
     Frame Rate: 30
   Name: root
   Tools:
@@ -199,4 +202,4 @@ Window Geometry:
     collapsed: false
   Width: 1200
   X: 166
-  Y: 373
+  Y: 197
